@@ -11,6 +11,10 @@ import { useAuthStore } from "/src/state/auth.store.ts"
 const Dashboard = () => {
   const logUserOut = useAuthStore.use.logout();
 
+  // TODO: list of monitoring checks (<CheckList>)
+  // TODO: basical user information (obtained via https://uptime.com/api/v1/docs/#/auth/get_auth_me)
+  // Use, e.g., tabbed UI from Evergreen-UI.
+
   return (
     <>
       <h1>Well, hello!</h1>
